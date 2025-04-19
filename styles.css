@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #003148;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #003148;
+    line-height: 100%;
+    letter-spacing: -2%;
+
+}
+
+p.subtitle {
+    font-size: 8px;
+    color: #003148;
+    font-family: Font Family/secondary;
+    font-weight: 300;
+
+    line-height: 150%;
+    letter-spacing: 0%;
+
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+}
+
+.divider-line {
+    height: 1px;
+    background-color: #DADADA;
+    width: 100%;
+    margin: 40px auto;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#step-3 input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+button:hover {
+    /* background-color: #0056b3; */
+    opacity: 0.8;
+}
+
+button.back-btn {
+    /* background-color: #6c757d; */
+    color: var(--Text-Icon-primary-dark, #003148);
+
+    background-color: transparent;
+    text-decoration: underline;
+    /* Button/Regular */
+    font-family: var(--Font-Family-primary, Inter);
+    font-size: var(--Font-Scale-Type-03, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    text-transform: capitalize;
+}
+
+button.back-btn:hover {
+    opacity: 0.8;
+}
+
+.robot-check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.robot-check-main {
+    padding: 12px;
+    border: 1px solid #D6D6D6;
+    border-radius: 2px;
+}
+
+.required-txt {
+    font-weight: 600;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+.step p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.step-number {
+    font-weight: bold;
+    font-size: 18px;
+    color: #003148;
+    margin-right: 10px;
+    background-color: #F2F2F2;
+    padding: 12px;
+    border-radius: 800px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    letter-spacing: 8%;
+    vertical-align: middle;
+
+}
+
+.date-slection-step-1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* Radio Button Group */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+.radio-btn {
+    display: inline-block;
+    width: 48%;
+    /* 50% width with a small gap */
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #003148;
+    border-radius: 5px;
+    background-color: white;
+    /* Default background */
+    color: #003148;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Font Family/secondary;
+    font-weight: 400;
+
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.radio-btn.selected {
+    background-color: #003148;
+    color: white;
+}
+
+.radio-btn:hover {
+    background-color: #f0f8ff;
+}
+
+.radio-btn:active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Style for selected state */
+.radio-btn.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.continue-btn {
+
+
+    display: flex;
+    height: 58px;
+    min-width: 44px;
+    min-height: 48px;
+    padding: 0px var(--Spacing-Vars-Spacing-05, 24px);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 80px;
+    border-radius: 80px;
+    background: var(--Background-Fill-accent, #209AE4);
+}
+
+.continue-btn span {
+    color: var(--Text-Icon-neutral-dark, #878787);
+    text-align: center;
+
+
+    /* Button/Regular */
+    font-family: var(--Font-Family-primary, Inter);
+    font-size: var(--Font-Scale-Type-03, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    text-transform: capitalize;
+}
+
+.image-bottom-form {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.image-bottom-form img {
+    width: 144px;
+    height: 54px;
+    aspect-ratio: 8/3;
+}
+
+.cont-back-btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.th-txt {
+    color: var(--Text-Icon-primary-dark, #003148);
+
+
+    /* H4/D */
+    font-family: var(--Font-Family-primary, Inter);
+    font-size: var(--Font-Scale-Type-07, 28px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.56px;
+}
+
+.th-img {
+    width: auto;
+}

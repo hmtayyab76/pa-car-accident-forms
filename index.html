@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Accident Claims Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="multi-step-form">
+            <!-- Step 1 -->
+            <div class="step" id="step-1">
+                <h2><span class="step-number">Step 1 / 3</span></h2>
+                <h2> Tell us about your injury</h2>
+
+                <p class="subtitle">It only takes 60 seconds to check your eligibility. No upfront costs!</p>
+                <div class="divider-line"></div>
+
+                <!-- Input fields for Step 1 -->
+                <label for="how-injury">How did you get hurt? *</label>
+                <label for="accident-date">When did the accident happen? *</label>
+                <div class="date-slection-step-1">
+                    <select id="month" required>
+                        <option value="">Month</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                    </select>
+                    <select id="day" required>
+                        <option value="">Day</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                    </select>
+                    <select id="year" required>
+                        <option value="">Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+
+                <label for="description">Please describe what happened *</label>
+                <textarea id="description" placeholder="Hint text" required></textarea>
+
+                <label for="medical-treatment">Estimated medical treatment *</label>
+                <select id="medical-treatment" required>
+                    <option value="">-- Select --</option>
+                    <option value="minor">Minor</option>
+                    <option value="serious">Serious</option>
+                </select>
+
+                <p class="required-txt">Required *</p>
+
+                <div class="robot-check-main">
+
+                    <span class="robot-check">
+                        <div>
+
+                            <input type="checkbox" id="robot-check" required>
+                            <span>
+                                I'm not a robot
+                            </span>
+                        </div>
+                        <img src="./assets/Logo.svg" alt=" " />
+                    </span>
+
+                </div>
+
+
+                <button type="button" id="continue-1" class="continue-btn" disabled>
+                    <span>
+                        Continue
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M12 5L10.7663 6.23375L15.6488 11.125H5V12.875H15.6488L10.7575 17.7575L12 19L19 12L12 5Z"
+                            fill="#878787" />
+                    </svg>
+                </button>
+
+                <div class="divider-line"></div>
+                <div class="image-bottom-form">
+
+                    <img src="./assets/image (2).png" alt="" />
+                </div>
+
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step" id="step-2">
+                <h2><span class="step-number">Step 2 / 3</span></h2>
+                <h2> Tell us about the accident</h2>
+
+                <p class="subtitle">It only takes 60 seconds to check your eligibility. No upfront costs!</p>
+                <div class="divider-line"></div>
+
+                <!-- Radio Buttons for Step 2 -->
+                <label for="fault">Was the accident your fault? *</label>
+                <div class="radio-group">
+                    <button type="button" class="radio-btn" data-value="yes" name="fault">Yes</button>
+                    <button type="button" class="radio-btn" data-value="no" name="fault">No</button>
+                </div>
+
+                <label for="insurance">Do both parties have insurance coverage? *</label>
+                <div class="radio-group">
+                    <button type="button" class="radio-btn" data-value="yes" name="insurance">Yes</button>
+                    <button type="button" class="radio-btn" data-value="no" name="insurance">No</button>
+                </div>
+
+                <label for="hurt">Were you physically hurt? *</label>
+                <div class="radio-group">
+                    <button type="button" class="radio-btn" data-value="yes" name="hurt">Yes</button>
+                    <button type="button" class="radio-btn" data-value="no" name="hurt">No</button>
+                </div>
+
+                <label for="immediate-medical">Did your injury require immediate medical attention? *</label>
+                <div class="radio-group">
+                    <button type="button" class="radio-btn" data-value="yes" name="immediate-medical">Yes</button>
+                    <button type="button" class="radio-btn" data-value="no" name="immediate-medical">No</button>
+                </div>
+
+                <label for="hospitalization">Did the accident cause hospitalization or medical treatment? *</label>
+                <div class="radio-group">
+                    <button type="button" class="radio-btn" data-value="yes" name="hospitalization">Yes</button>
+                    <button type="button" class="radio-btn" data-value="no" name="hospitalization">No</button>
+                </div>
+
+                <label for="attorney-help">Is an attorney helping you with this claim? *</label>
+                <div class="radio-group">
+                    <button type="button" class="radio-btn" data-value="yes" name="attorney-help">Yes</button>
+                    <button type="button" class="radio-btn" data-value="no" name="attorney-help">No</button>
+                </div>
+
+
+
+                <div class="cont-back-btns">
+
+                    <button type="button" id="continue-2" class="continue-btn" disabled>
+                        <span>
+                            Continue
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 5L10.7663 6.23375L15.6488 11.125H5V12.875H15.6488L10.7575 17.7575L12 19L19 12L12 5Z"
+                                fill="#878787" />
+                        </svg>
+                    </button>
+                    <button type="button" id="back-2" class="back-btn">Back</button>
+                </div>
+
+                <div class="divider-line"></div>
+                <div class="image-bottom-form">
+
+                    <img src="./assets/image (2).png" alt="" />
+                </div>
+
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step" id="step-3">
+                <h2><span class="step-number">Step 3 / 3</span></h2>
+                <h2> Share your contact information</h2>
+
+                <p class="subtitle">Great, you're almost done! We just need your contact info and location so we can
+                    match you with a nearby attorney who can complete your evaluation by phone.</p>
+                <div class="divider-line"></div>
+
+                <!-- Input fields for Step 3 -->
+                <label for="full-name">Full Name *</label>
+                <input type="text" id="full-name" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" required>
+
+                <label for="zip">Zip Code *</label>
+                <input type="text" id="zip" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required>
+
+
+
+                <div class="cont-back-btns">
+
+                    <button type="button" id="continue-3" class="continue-btn" disabled>
+                        <span>
+                            Get A Free Case Review Now
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 5L10.7663 6.23375L15.6488 11.125H5V12.875H15.6488L10.7575 17.7575L12 19L19 12L12 5Z"
+                                fill="#878787" />
+                        </svg>
+                    </button>
+                    <button type="button" id="back-3" class="back-btn">Back</button>
+                </div>
+
+                <div class="divider-line"></div>
+                <div class="image-bottom-form">
+
+                    <img src="./assets/image (2).png" alt="" />
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step" id="step-4">
+                <img src="./assets/Frame 48096644.png" class="th-img" alt="" />
+                <h2 class="th-txt">Thank You!</h2>
+                <p>We haven’t matched you with an attorney yet who can complete your claim evaluation, but hope to do so
+                    shortly.</p>
+                <button type="button" id="continue-4" class="continue-btn">Click Here For Next Steps</button>
+
+                <div class="divider-line"></div>
+                <div class="image-bottom-form">
+
+                    <img src="./assets/image (2).png" alt="" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
