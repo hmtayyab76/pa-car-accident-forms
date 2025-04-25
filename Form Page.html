@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Accident Claims Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="form page.css">
+</head>
+
+<body>
+    <div class="bg-img">
+        <header>
+            <div class="logo-car-accidnet">
+                <img src="./assets/logo.png" />
+                <h1>Car Accident <span>Home</span></h1>
+            </div>
+            <div class="head-left">
+                <p>FAST, FREE <br>CLAIMS EVALUATION</p>
+                <a href="#">866-256-3377 <img src="./assets/Inputs-phone-filled.png" alt=""></a>
+            </div>
+        </header>
+        <img class="hie-deskt" src="./assets/Overlay.png" />
+        <div class="sec-bottom">
+            <!-- <h3>Hurt in a Crash?</h3> -->
+            <h1>Your case could be worth<b> more than you think!</b></h1>
+            <p>Maximize your payout with a trusted attorney and a 100% free consultation.</p>
+            <!-- <a href="#">Get a Free Case Review Now<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M12 5L10.7663 6.23375L15.6488 11.125H5V12.875H15.6488L10.7575 17.7575L12 19L19 12L12 5Z"
+                        fill="white" />
+                </svg></a> -->
+            <img class="dow-arrow" src="./assets/Frame 48096670.png" />
+        </div>
+    </div>
+    <div class="main-form-content-d6">
+        <div class="form-content-flex-d6">
+            <div class="form-container">
+                <form id="multi-step-form">
+                    <!-- Step 1 -->
+                    <div class="step" id="step-1">
+                        <h3><span class="step-number">Step 1 / 3</span></h3>
+                        <h2> Tell us about your injury</h2>
+
+                        <p class="subtitle">It only takes 60 seconds to check your eligibility. No upfront costs!</p>
+                        <div class="divider-line"></div>
+
+                        <!-- Input fields for Step 1 -->
+                        <label for="how-injury">How did you get hurt? *</label>
+                        <label for="accident-date">When did the accident happen? *</label>
+                        <div class="date-slection-step-1">
+                            <select id="month" required>
+                                <option value="">Month</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                            </select>
+                            <select id="day" required>
+                                <option value="">Day</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                            </select>
+                            <select id="year" required>
+                                <option value="">Year</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+
+                        <label for="description">Please describe what happened *</label>
+                        <textarea id="description" placeholder="Hint text" required></textarea>
+
+                        <label for="medical-treatment">Estimated medical treatment *</label>
+                        <select id="medical-treatment" required>
+                            <option value="">-- Select --</option>
+                            <option value="minor">Minor</option>
+                            <option value="serious">Serious</option>
+                        </select>
+
+                        <p class="required-txt">Required *</p>
+
+                        <div class="robot-check-main">
+
+                            <span class="robot-check">
+                                <div>
+
+                                    <input type="checkbox" id="robot-check" required>
+                                    <span>
+                                        I'm not a robot
+                                    </span>
+                                </div>
+                                <img src="./assets/Logo.svg" alt=" " />
+                            </span>
+
+                        </div>
+
+
+                        <button type="button" id="continue-1" class="continue-btn" disabled>
+                            <span>
+                                Continue
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 5L10.7663 6.23375L15.6488 11.125H5V12.875H15.6488L10.7575 17.7575L12 19L19 12L12 5Z"
+                                    fill="#878787" />
+                            </svg>
+                        </button>
+
+                        <div class="divider-line"></div>
+                        <div class="image-bottom-form">
+
+                            <img src="./assets/image (2).png" alt="" />
+                        </div>
+
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step" id="step-2">
+                        <h2><span class="step-number">Step 2 / 3</span></h2>
+                        <h2> Tell us about the accident</h2>
+
+                        <p class="subtitle">It only takes 60 seconds to check your eligibility. No upfront costs!</p>
+                        <div class="divider-line"></div>
+
+                        <!-- Radio Buttons for Step 2 -->
+                        <label for="fault">Was the accident your fault? *</label>
+                        <div class="radio-group">
+                            <button type="button" class="radio-btn" data-value="yes" name="fault">Yes</button>
+                            <button type="button" class="radio-btn" data-value="no" name="fault">No</button>
+                        </div>
+
+                        <label for="insurance">Do both parties have insurance coverage? *</label>
+                        <div class="radio-group">
+                            <button type="button" class="radio-btn" data-value="yes" name="insurance">Yes</button>
+                            <button type="button" class="radio-btn" data-value="no" name="insurance">No</button>
+                        </div>
+
+                        <label for="hurt">Were you physically hurt? *</label>
+                        <div class="radio-group">
+                            <button type="button" class="radio-btn" data-value="yes" name="hurt">Yes</button>
+                            <button type="button" class="radio-btn" data-value="no" name="hurt">No</button>
+                        </div>
+
+                        <label for="immediate-medical">Did your injury require immediate medical attention? *</label>
+                        <div class="radio-group">
+                            <button type="button" class="radio-btn" data-value="yes"
+                                name="immediate-medical">Yes</button>
+                            <button type="button" class="radio-btn" data-value="no" name="immediate-medical">No</button>
+                        </div>
+
+                        <label for="hospitalization">Did the accident cause hospitalization or medical treatment?
+                            *</label>
+                        <div class="radio-group">
+                            <button type="button" class="radio-btn" data-value="yes" name="hospitalization">Yes</button>
+                            <button type="button" class="radio-btn" data-value="no" name="hospitalization">No</button>
+                        </div>
+
+                        <label for="attorney-help">Is an attorney helping you with this claim? *</label>
+                        <div class="radio-group">
+                            <button type="button" class="radio-btn" data-value="yes" name="attorney-help">Yes</button>
+                            <button type="button" class="radio-btn" data-value="no" name="attorney-help">No</button>
+                        </div>
+
+
+
+                        <div class="cont-back-btns">
+
+                            <button type="button" id="continue-2" class="continue-btn" disabled>
+                                <span>
+                                    Continue
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 5L10.7663 6.23375L15.6488 11.125H5V12.875H15.6488L10.7575 17.7575L12 19L19 12L12 5Z"
+                                        fill="#878787" />
+                                </svg>
+                            </button>
+                            <button type="button" id="back-2" class="back-btn">Back</button>
+                        </div>
+
+                        <div class="divider-line"></div>
+                        <div class="image-bottom-form">
+
+                            <img src="./assets/image (2).png" alt="" />
+                        </div>
+
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step" id="step-3">
+                        <h2><span class="step-number">Step 3 / 3</span></h2>
+                        <h2> Share your contact information</h2>
+
+                        <p class="subtitle">Great, you're almost done! We just need your contact info and location so we
+                            can
+                            match you with a nearby attorney who can complete your evaluation by phone.</p>
+                        <div class="divider-line"></div>
+
+                        <!-- Input fields for Step 3 -->
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" required>
+
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" required>
+
+                        <label for="zip">Zip Code *</label>
+                        <input type="text" id="zip" required>
+
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required>
+
+
+
+                        <div class="cont-back-btns">
+
+                            <button type="button" id="continue-3" class="continue-btn" disabled>
+                                <span>
+                                    Get A Free Case Review Now
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 5L10.7663 6.23375L15.6488 11.125H5V12.875H15.6488L10.7575 17.7575L12 19L19 12L12 5Z"
+                                        fill="#878787" />
+                                </svg>
+                            </button>
+                            <button type="button" id="back-3" class="back-btn">Back</button>
+                        </div>
+
+                        <div class="divider-line"></div>
+                        <div class="image-bottom-form">
+
+                            <img src="./assets/image (2).png" alt="" />
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step" id="step-4">
+                        <img src="./assets/Frame 48096644.png" class="th-img" alt="" />
+                        <h2 class="th-txt">Thank You!</h2>
+                        <p>We haven’t matched you with an attorney yet who can complete your claim evaluation, but hope
+                            to
+                            do so
+                            shortly.</p>
+                        <button type="button" id="continue-4" class="continue-btn">Click Here For Next Steps</button>
+
+                        <div class="divider-line"></div>
+                        <div class="image-bottom-form">
+
+                            <img src="./assets/image (2).png" alt="" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form-shadow-d6"></div>
+            <div class="content-side-d6">
+
+                <div class="lower-content-d6">
+                    <div class="form-content-logo-d6">
+                        <img src="./assets/Vector (8).svg">
+                        <h2>The longer you wait, the harder it is to win your case.</h2>
+                    </div>
+                    <div class="lower-detail-block-d6">
+                        <div class="lower-text-d6">
+
+                            <p>Every moment you wait could reduce your chances of getting the full compensation you
+                                deserve.
+                                Insurance companies are trained to delay, deny, and underpay—especially if you’re not
+                                represented by a lawyer.</p>
+                            <br>
+                            <p>
+                                But here’s the truth: According to industry studies, 91% of car accident victims who
+                                hire an
+                                attorney receive a cash settlement.
+                                Compare that to just 51% of people without legal help—that’s a 78% higher chance of
+                                getting
+                                paid when you have a lawyer on your side.</p>
+                            <br>
+                            <p>The sooner you take action, the better your chances of</p>
+                        </div>
+                        <div class="lower-icons-text-d6">
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10"
+                                    fill="none">
+                                    <path
+                                        d="M2.3394 3.73936C1.07269 2.5089 -0.852362 4.381 0.414337 5.61551L3.76034 8.8764C4.29369 9.39214 5.15623 9.39214 5.68541 8.8764L11.698 3.01653C12.9606 1.78201 11.0397 -0.0941335 9.77298 1.14038L4.72282 6.06223L2.3394 3.73936Z"
+                                        fill="#209AE3" />
+                                </svg> Preserving key evidence</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10"
+                                    fill="none">
+                                    <path
+                                        d="M2.3394 3.73936C1.07269 2.5089 -0.852362 4.381 0.414337 5.61551L3.76034 8.8764C4.29369 9.39214 5.15623 9.39214 5.68541 8.8764L11.698 3.01653C12.9606 1.78201 11.0397 -0.0941335 9.77298 1.14038L4.72282 6.06223L2.3394 3.73936Z"
+                                        fill="#209AE3" />
+                                </svg> Maximizing your settlement</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10"
+                                    fill="none">
+                                    <path
+                                        d="M2.3394 3.73936C1.07269 2.5089 -0.852362 4.381 0.414337 5.61551L3.76034 8.8764C4.29369 9.39214 5.15623 9.39214 5.68541 8.8764L11.698 3.01653C12.9606 1.78201 11.0397 -0.0941335 9.77298 1.14038L4.72282 6.06223L2.3394 3.73936Z"
+                                        fill="#209AE3" />
+                                </svg>Covering your medical bills and lost wages</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10"
+                                    fill="none">
+                                    <path
+                                        d="M2.3394 3.73936C1.07269 2.5089 -0.852362 4.381 0.414337 5.61551L3.76034 8.8764C4.29369 9.39214 5.15623 9.39214 5.68541 8.8764L11.698 3.01653C12.9606 1.78201 11.0397 -0.0941335 9.77298 1.14038L4.72282 6.06223L2.3394 3.73936Z"
+                                        fill="#209AE3" />
+                                </svg>Holding the at-fault party accountable</p>
+                        </div>
+                        <div class="lower-end-text-d6">
+                            <p>Time limits apply in every state. Don’t risk missing out—start your free case review
+                                today.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-last-block-d6">
+                    <div class="last-block-heading-text">
+                        <h3>Don’t wait! <br>Find out what your case may be worth today.</h3>
+                        <p>Simply call 866-531-7740 or fill out the form above for <br>your <span>FREE
+                                evaluation!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hed-fot-mai">
+        <div class="botom-section">
+            <div class="logo-car-accidnet">
+                <img src="./assets/logo.png" />
+                <h1>Car Accident <span> Home</span></h1>
+            </div>
+            <div class="desk-show head-left">
+                <p>FAST, FREE <br>CLAIMS EVALUATION</p>
+                <a href="#">866-256-3377 <img src="./assets/Inputs-phone-filled.png" alt=""></a>
+            </div>
+        </div>
+        <div class="botom-right">
+            <p class="bm-desc">Advertising paid for by participating attorneys in a joint advertising program. Car
+                Accident Home is not a law firm or an attorney referral service. This advertisement is not legal advice
+                and is not a guarantee or prediction of the outcome of your legal matter. Every case is different. The
+                outcome depends on the laws, facts, and circumstances unique to each case. Hiring an attorney is an
+                important decision that should not be based solely on advertising. Request free information about your
+                attorney's background and experience. This advertising does not imply a higher quality of legal services
+                than that provided by other attorneys. This advertising does not imply that the attorneys are certified
+                specialists or experts in any area of law. No legal services will be provided unless there is a signed
+                agreement between client and attorney. A complete list of joint advertising attorneys can be found
+                at participating sponsors.</p>
+            <p class="cpy-text">Copyright ©2025 LeadingResponse. All rights reserved | <a href="#">Privacy
+                    Policy </a>|<a href=""> Terms and
+                    Condition</a></p>
+            <img class="btm-img-w" src="./assets/accred.png" alt="">
+        </div>
+        <div class="mobile-show head-left">
+            <p>FAST, FREE <br>CLAIMS EVALUATION</p>
+            <a href="#">866-256-3377 <img src="./assets/Inputs-phone-filled.png" alt=""></a>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
